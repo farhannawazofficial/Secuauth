@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forgot Password</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-purple-900 to-purple-700 flex items-center justify-center p-4">
+
+  <div class="bg-white w-full max-w-4xl rounded-xl shadow-lg flex flex-col md:flex-row overflow-hidden">
+
+    <!-- Left Image/Illustration -->
+    <div class="w-full md:w-1/2 flex items-center justify-center p-6">
+      <img src="../Accets/forget_passward.jpg" alt="Forgot Password" class="w-full max-w-sm">
+    </div>
+
+    <!-- Right Form -->
+    <div class="w-full md:w-1/2 p-8 flex flex-col justify-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+        Forgot <br><span class="text-[#330140]">Your Password?</span>
+      </h2>
+      <p class="text-gray-600 mb-6">Enter your email address to reset your password.</p>
+
+      <form class="space-y-5">
+        <input type="email" placeholder="Email Address"
+               class="w-full px-4 py-3 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" />
+
+        <!-- A href styled as button -->
+        <a href="./2fa.html"
+           class="block text-center w-full bg-gradient-to-r from-teal-400 to-green-500 text-white font-semibold py-3 rounded-md hover:from-purple-700 hover:to-purple-900 transition duration-300">
+          RESET PASSWORD
+        </a>
+      </form>
+
+      <!-- Back to login -->
+      <div class="mt-6 text-sm text-center">
+        <a href="./signin.html" class="text-purple-700 hover:underline">← Back to login</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

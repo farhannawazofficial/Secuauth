@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <title>Secuauth Project</title>
+
+</head>
+
+<body class="text-white">
+
+  <!-- Background Video -->
+  <div class="fixed inset-0 -z-10 h-screen w-full">
+    <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-70">
+      <source src="../Accets/bg-vdo.mp4" type="video/mp4" />
+    </video>
+    <div class="absolute inset-0 bg-[#330140] opacity-70"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="py-5 px-5 sm:px-10 flex justify-between items-center relative z-10">
+    <!-- Logo -->
+    <h1>
+      <img class="w-36 sm:w-44 md:w-52" src="../Accets/logo.png" alt="logo" />
+    </h1>
+
+    <!-- Hamburger Icon (Mobile Only) -->
+    <button class="sm:hidden focus:outline-none" onclick="toggleMenu()">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="hidden sm:flex items-center gap-8 text-base sm:text-lg md:text-xl">
+      <ul class="flex items-center gap-4 sm:gap-6">
+        <li><a class="hover:text-[#ffdb66]" href="#">Documentation</a></li>
+        <li><a class="hover:text-[#ffdb66]" href="#">Tutorial</a></li>
+        <li><a class="hover:text-[#ffdb66]" href="#">FAQ</a></li>
+        <li><a class="hover:text-[#ffdb66]" href="#">Security</a></li>
+      </ul>
+      <!-- Sign Up Button -->
+      <a href="./signup.html">
+        <button
+          class="uppercase hover:cursor-pointer py-2 px-6 sm:px-8 md:px-10 bg-white text-black rounded-md hover:bg-[#400132] hover:text-white transition">
+          <i class="fas fa-user-plus"></i>
+          Sign up
+        </button>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="sm:hidden px-5 pt-4 space-y-4 hidden text-white text-base">
+    <ul class="flex flex-col gap-3">
+      <li><a class="hover:text-[#ffdb66]" href="#">Documentation</a></li>
+      <li><a class="hover:text-[#ffdb66]" href="#">Tutorial</a></li>
+      <li><a class="hover:text-[#ffdb66]" href="#">FAQ</a></li>
+      <li><a class="hover:text-[#ffdb66]" href="#">Security</a></li>
+    </ul>
+    <a href="./signup.html">
+      <button
+        class="uppercase mt-2 sm:mt-0 py-2 px-6 sm:px-8 md:px-10 bg-white text-black rounded-md hover:bg-[#400132] hover:text-white transition flex items-center gap-2">
+        Sign up
+      </button>
+    </a>
+  </div>
+
+
+  <main>
+    <!-- Hero Section -->
+    <section class="min-h-[70vh] flex flex-col justify-center items-center text-center px-4">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase font-bold leading-tight">
+        SecureAuth Web Platform
+      </h1>
+      <p class="text-base sm:text-lg md:text-2xl max-w-2xl mt-4">
+        Secure access for everyone but not just anyone
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-6 w-full justify-center">
+        <a href="#"
+          class="uppercase bg-white text-black px-4 sm:px-6 md:px-8 lg:px-10 py-2 sm:py-3 rounded-md text-sm sm:text-base md:text-lg font-semibold hover:bg-[#400132] hover:text-white transition w-full sm:w-auto text-center">
+          Get Started
+        </a>
+        <a href="./signup.html"
+          class="uppercase bg-white text-black px-4 sm:px-6 md:px-8 lg:px-10 py-2 sm:py-3 rounded-md text-sm sm:text-base md:text-lg font-semibold hover:bg-[#400132] hover:text-white transition w-full sm:w-auto text-center">
+          Sign Up
+        </a>
+      </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <section class="bg-white text-[#330140] py-16 px-4 sm:px-10 lg:px-20">
+      <div class="text-center mb-12">
+        <span class="uppercase text-sm tracking-wide text-[#330140] font-semibold">Our Core Features</span>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mt-2">Powerful Tools for Modern Authentication</h2>
+        <p class="mt-4 text-gray-600 text-sm sm:text-base max-w-3xl mx-auto">
+          Designed to keep your users safe while offering seamless login experiences — secure, fast, and simple.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="bg-[#f6f2fa] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 group">
+          <div class="text-4xl mb-4 group-hover:text-[#330140] transition duration-300">🔐</div>
+          <h3 class="text-xl font-semibold mb-2">Multi-Factor Authentication</h3>
+          <p class="text-gray-600 text-sm">
+            Add an extra layer of protection to your platform with OTP, biometric, or app-based verification.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-[#f6f2fa] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 group">
+          <div class="text-4xl mb-4 group-hover:text-[#330140] transition duration-300">⚡</div>
+          <h3 class="text-xl font-semibold mb-2">Fast Login & SSO</h3>
+          <p class="text-gray-600 text-sm">
+            Enable quick logins via Google, GitHub, Facebook, and more — all under one secure umbrella.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-[#f6f2fa] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 group">
+          <div class="text-4xl mb-4 group-hover:text-[#330140] transition duration-300">🛡️</div>
+          <h3 class="text-xl font-semibold mb-2">End-to-End Encryption</h3>
+          <p class="text-gray-600 text-sm">
+            All user credentials are encrypted and protected at every level of the authentication flow.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="bg-[#f6f2fa] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 group">
+          <div class="text-4xl mb-4 group-hover:text-[#330140] transition duration-300">📊</div>
+          <h3 class="text-xl font-semibold mb-2">Real-Time Analytics</h3>
+          <p class="text-gray-600 text-sm">
+            Monitor login activity, suspicious attempts, and user sessions via a user-friendly dashboard.
+          </p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="bg-[#f6f2fa] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 group">
+          <div class="text-4xl mb-4 group-hover:text-[#330140] transition duration-300">📱</div>
+          <h3 class="text-xl font-semibold mb-2">Mobile-First Design</h3>
+          <p class="text-gray-600 text-sm">
+            Fully responsive design with smooth authentication experience across all devices.
+          </p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="bg-[#f6f2fa] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 group">
+          <div class="text-4xl mb-4 group-hover:text-[#330140] transition duration-300">⚙️</div>
+          <h3 class="text-xl font-semibold mb-2">Customizable Auth Flows</h3>
+          <p class="text-gray-600 text-sm">
+            Build custom login, registration, and password reset flows with just a few lines of code.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Footer Section -->
+    <footer class="bg-[#330140] text-white py-10 px-4 sm:px-10 lg:px-20">
+      <div class="flex flex-col lg:flex-row justify-between gap-10">
+
+        <!-- Left: Logo & Description -->
+        <div class="flex flex-col gap-4 max-w-sm">
+          <img src="../Accets/logo.png" alt="Logo" class="w-32 sm:w-40" />
+          <p class="text-sm text-gray-200">
+            Providing seamless and secure access to your modern web applications. Auth that works fast and protects even
+            faster.
+          </p>
+          <div class="flex gap-3 mt-2">
+            <a href="#" class="hover:text-yellow-300 transition"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-yellow-300 transition"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-yellow-300 transition"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-yellow-300 transition"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Center: Navigation Links -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 text-sm">
+          <div class="flex flex-col gap-2">
+            <h3 class="font-semibold text-white">Explore</h3>
+            <a href="#" class="hover:text-yellow-300 transition">Documentation</a>
+            <a href="#" class="hover:text-yellow-300 transition">Tutorial</a>
+            <a href="#" class="hover:text-yellow-300 transition">FAQs</a>
+            <a href="#" class="hover:text-yellow-300 transition">Security</a>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h3 class="font-semibold text-white">Company</h3>
+            <a href="#" class="hover:text-yellow-300 transition">About</a>
+            <a href="#" class="hover:text-yellow-300 transition">Careers</a>
+            <a href="#" class="hover:text-yellow-300 transition">Support</a>
+            <a href="#" class="hover:text-yellow-300 transition">Contact</a>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h3 class="font-semibold text-white">Legal</h3>
+            <a href="#" class="hover:text-yellow-300 transition">Privacy</a>
+            <a href="#" class="hover:text-yellow-300 transition">Terms</a>
+            <a href="#" class="hover:text-yellow-300 transition">Cookies</a>
+          </div>
+        </div>
+
+        <!-- Right: Newsletter -->
+        <div class="max-w-sm w-full">
+          <h3 class="text-sm uppercase font-semibold tracking-wide text-white mb-2">Sign up for updates</h3>
+          <p class="text-sm text-gray-200 mb-4">Get the latest security tips, updates & releases from our platform.</p>
+          <form class="flex flex-col sm:flex-row items-center gap-3">
+            <input type="email" placeholder="Email"
+              class="w-full px-2 py-2 border rounded-md">
+            <button
+              class="bg-yellow-400 hover:bg-yellow-500 text-[#330140] px-4 py-2 rounded-md font-semibold transition w-full sm:w-auto">
+              Subscribe
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Info -->
+      <div class="mt-10 text-sm text-gray-300 text-center border-t border-gray-500 pt-4">
+        &copy; 2025 SecureAuth Platform. All rights reserved.
+      </div>
+    </footer>
+
+
+  </main>
+
+</body>
+
+</html>

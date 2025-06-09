@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2FA Authentication</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="bg-white shadow-lg rounded-xl p-8 max-w-md w-full text-center">
+    <div class="mb-6">
+      <div class="w-12 h-12 mx-auto mb-4">
+        <!-- Shield Icon (optional SVG or emoji placeholder) -->
+        <svg class="w-full h-full text-purple-900" fill="none" stroke="currentColor" stroke-width="1.5"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 3l8.5 4.5v6.75a8.5 8.5 0 01-17 0V7.5L12 3z" />
+        </svg>
+      </div>
+      <h2 class="text-xl font-semibold text-purple-900">Authenticate Your Account</h2>
+      <p class="text-gray-600 mt-2 text-sm">Please confirm your account by entering the code sent to <br />
+        *******2282</p>
+    </div>
+
+    <!-- Code Inputs -->
+    <form>
+      <div class="flex justify-center space-x-3 mb-6">
+        <input type="text" 
+          class="w-12 h-12 border rounded-md text-center text-xl focus:outline-none focus:ring-2 focus:ring-purple-900"
+          required>
+        <input type="text" 
+          class="w-12 h-12 border rounded-md text-center text-xl focus:outline-none focus:ring-2 focus:ring-purple-900"
+          required>
+        <input type="text" 
+          class="w-12 h-12 border rounded-md text-center text-xl focus:outline-none focus:ring-2 focus:ring-purple-900"
+          required>
+        <input type="text" 
+          class="w-12 h-12 border rounded-md text-center text-xl focus:outline-none focus:ring-2 focus:ring-purple-900"
+          required>
+        <input type="text" 
+          class="w-12 h-12 border rounded-md text-center text-xl focus:outline-none focus:ring-2 focus:ring-purple-900"
+          required>
+        <input type="text" 
+          class="w-12 h-12 border rounded-md text-center text-xl focus:outline-none focus:ring-2 focus:ring-purple-900"
+          required>
+      </div>
+
+          <a href="./signin.html"
+           class="block text-center w-full bg-gradient-to-r from-purple-700 to-purple-900 text-white font-semibold py-3 rounded-md hover:from-purple-700 hover:to-purple-900 transition duration-300">
+          Submit
+        </a>
+
+      <p class="text-xs text-gray-500 mt-4">It may take a minute to receive your code. <br>
+        Haven’t received it?
+        <a href="./signin.html" class="text-purple-900 font-medium hover:underline">Resend a new code</a>
+      </p>
+    </form>
+  </div>
+
+</body>
+
+</html>
